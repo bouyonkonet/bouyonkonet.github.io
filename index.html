@@ -36,6 +36,13 @@ iframe{width:100%;border:0;border-radius:12px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
 .grid .card{margin:0}
 
+
+.picembed{display:block}
+.picembed .thumb{position:relative;display:block;border-radius:10px;overflow:hidden}
+.picembed img{width:100%;display:block}
+.picembed .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.picembed .play i{display:flex;width:68px;height:48px;background:rgba(204,0,0,.92);border-radius:10px;align-items:center;justify-content:center}
+.picembed .play i::after{content:"";border-style:solid;border-width:10px 0 10px 16px;border-color:transparent transparent transparent #fff}
 .trend{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:18px 0}
 .tcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px;position:relative}
 .tcard .thumb{position:relative;border-radius:10px;overflow:hidden}
@@ -82,7 +89,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:22px 0 34px;colo
 <div class="card">
 <h3>ROAD MIX on YouTube</h3>
 <p>The video side of the mix: bouyon performances, carnival clips and new drops on the Bouyon Shattaz YouTube playlist.</p>
-<iframe title="Bouyon Road Mix on YouTube" src="https://www.youtube.com/embed/videoseries?list=PLB1axoRydQrdtCBSbvnkbSoKWJxFV8Xto" height="360" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a class="picembed" href="https://youtube.com/playlist?list=PLB1axoRydQrdtCBSbvnkbSoKWJxFV8Xto"><span class="thumb"><img src="https://i.ytimg.com/vi/yr30Yb0F2E0/hqdefault.jpg" alt="ROAD MIX YouTube playlist cover: G'z Up FIX UP, bouyon music 2026" loading="lazy"><span class="play"><i></i></span></span></a>
 <p style="margin-top:12px"><a class="btn" href="https://youtube.com/playlist?list=PLB1axoRydQrdtCBSbvnkbSoKWJxFV8Xto">Open in YouTube</a></p>
 </div>
 
