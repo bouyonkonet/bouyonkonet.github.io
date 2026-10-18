@@ -35,6 +35,20 @@ a{color:var(--acc)}
 iframe{width:100%;border:0;border-radius:12px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
 .grid .card{margin:0}
+
+.trend{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:18px 0}
+.tcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px;position:relative}
+.tcard .thumb{position:relative;border-radius:10px;overflow:hidden}
+.tcard img{width:100%;display:block}
+.tcard .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.tcard .play i{display:flex;align-items:center;justify-content:center;width:64px;height:44px;background:rgba(204,0,0,.92);border-radius:10px}
+.tcard .play i::after{content:"";border-style:solid;border-width:9px 0 9px 15px;border-color:transparent transparent transparent #fff}
+.tcard .views{position:absolute;left:8px;bottom:8px;background:rgba(0,0,0,.8);color:#fff;font-size:12px;padding:2px 8px;border-radius:999px}
+.tcard h4{margin:10px 0 4px;font-size:16px;line-height:1.35}
+.tcard p{margin:0;color:var(--mut);font-size:14px}
+.tcard .mainlink{color:var(--ink);text-decoration:none}
+.tcard .mainlink::after{content:"";position:absolute;inset:0}
+.tcard .spot{position:relative;z-index:2;display:inline-block;margin-top:8px;font-size:13px}
 details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:10px 0}
 details summary{cursor:pointer;font-weight:700}
 footer{border-top:1px solid var(--line);margin-top:40px;padding:22px 0 34px;color:var(--mut);font-size:14px}
@@ -72,6 +86,19 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:22px 0 34px;colo
 <p style="margin-top:12px"><a class="btn" href="https://youtube.com/playlist?list=PLB1axoRydQrdtCBSbvnkbSoKWJxFV8Xto">Open in YouTube</a></p>
 </div>
 
+
+
+<h2>Trending bouyon songs on YouTube</h2>
+<p class="lead">The bouyon songs running YouTube right now, pulled from the popular shelf of the Smokiller channel. Tap any cover: every one of them plays inside the ROAD MIX playlists.</p>
+<div class="trend">
+<div class="tcard"><div class="thumb"><img src="https://i.ytimg.com/vi/Dxk7nJ7eCSE/hqdefault.jpg" alt="Trending bouyon song on YouTube: Reo x Téhilah - La Vie Doux" loading="lazy"><span class="play"><i></i></span><span class="views">2.2M views</span></div><h4><a class="mainlink" href="https://youtube.com/playlist?list=PLB1axoRydQrdtCBSbvnkbSoKWJxFV8Xto">Reo x Téhilah - La Vie Doux</a></h4><p>Play it in the ROAD MIX playlist</p><a class="spot" href="https://open.spotify.com/playlist/4ikmgg9FzDug5tLttfhfQp">Spotify : ROAD MIX</a></div>
+<div class="tcard"><div class="thumb"><img src="https://i.ytimg.com/vi/lOD62sY45Xs/hqdefault.jpg" alt="Trending bouyon song on YouTube: Shelly x Nice x Pudaz - Bye to de Old Me (Remix)" loading="lazy"><span class="play"><i></i></span><span class="views">691K views</span></div><h4><a class="mainlink" href="https://youtube.com/playlist?list=PLB1axoRydQrdtCBSbvnkbSoKWJxFV8Xto">Shelly x Nice x Pudaz - Bye to de Old Me (Remix)</a></h4><p>Play it in the ROAD MIX playlist</p><a class="spot" href="https://open.spotify.com/playlist/4ikmgg9FzDug5tLttfhfQp">Spotify : ROAD MIX</a></div>
+<div class="tcard"><div class="thumb"><img src="https://i.ytimg.com/vi/u0CGK-7PyGo/hqdefault.jpg" alt="Trending bouyon song on YouTube: Shelly & Signal Band - Where Did You Come From" loading="lazy"><span class="play"><i></i></span><span class="views">334K views</span></div><h4><a class="mainlink" href="https://youtube.com/playlist?list=PLB1axoRydQrdtCBSbvnkbSoKWJxFV8Xto">Shelly & Signal Band - Where Did You Come From</a></h4><p>Play it in the ROAD MIX playlist</p><a class="spot" href="https://open.spotify.com/playlist/4ikmgg9FzDug5tLttfhfQp">Spotify : ROAD MIX</a></div>
+<div class="tcard"><div class="thumb"><img src="https://i.ytimg.com/vi/a1upFlQ5tVU/hqdefault.jpg" alt="Trending bouyon song on YouTube: Shelly & Signal Band - What YOU Say" loading="lazy"><span class="play"><i></i></span><span class="views">283K views</span></div><h4><a class="mainlink" href="https://youtube.com/playlist?list=PLB1axoRydQrdtCBSbvnkbSoKWJxFV8Xto">Shelly & Signal Band - What YOU Say</a></h4><p>Play it in the ROAD MIX playlist</p><a class="spot" href="https://open.spotify.com/playlist/4ikmgg9FzDug5tLttfhfQp">Spotify : ROAD MIX</a></div>
+<div class="tcard"><div class="thumb"><img src="https://i.ytimg.com/vi/RCYtWylfKKU/hqdefault.jpg" alt="Trending bouyon song on YouTube: KTB - Come Ova" loading="lazy"><span class="play"><i></i></span><span class="views">278K views</span></div><h4><a class="mainlink" href="https://youtube.com/playlist?list=PLB1axoRydQrdtCBSbvnkbSoKWJxFV8Xto">KTB - Come Ova</a></h4><p>Play it in the ROAD MIX playlist</p><a class="spot" href="https://open.spotify.com/playlist/4ikmgg9FzDug5tLttfhfQp">Spotify : ROAD MIX</a></div>
+<div class="tcard"><div class="thumb"><img src="https://i.ytimg.com/vi/L1tF3rJKsYE/hqdefault.jpg" alt="Trending bouyon song on YouTube: Bryson Tiller - Bouyon Shattaz Remix (prod. Smokiller)" loading="lazy"><span class="play"><i></i></span><span class="views">15K views</span></div><h4><a class="mainlink" href="https://youtube.com/playlist?list=PLB1axoRydQrdtCBSbvnkbSoKWJxFV8Xto">Bryson Tiller - Bouyon Shattaz Remix (prod. Smokiller)</a></h4><p>Play it in the ROAD MIX playlist</p><a class="spot" href="https://open.spotify.com/playlist/4ikmgg9FzDug5tLttfhfQp">Spotify : ROAD MIX</a></div>
+
+</div>
 
 <div class="card">
 <h3>Smokiller: the Bouyon Shattaz remixes</h3>
